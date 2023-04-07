@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v2
+        uses: golangci/golangci-lint-action@v3
         with:
-          version: v1.48.0
+          version: v1.29
           working-directory: protocol/grpc
           args: --skip-dirs=examples --skip-files=.*_test.go$
